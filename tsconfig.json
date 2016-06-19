@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "system",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": false,
+    "outDir": "./app"
+  },
+  "filesGlob": [
+    "./dev/**/*.ts",
+    "!./node_modules/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "typings/main",
+    "typings/main.d.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": true
+  },
+  "files": [
+    "./dev/app.component.ts",
+    "./dev/boot.ts",
+    "./dev/protected/protected.component.ts",
+    "./dev/protected/supersecret.component.ts",
+    "./dev/shared/data.service.ts",
+    "./dev/shared/header.component.ts",
+    "./dev/shared/user.interface.ts",
+    "./dev/unprotected/signin.component.ts",
+    "./dev/unprotected/signup.component.ts"
+  ]
+}
